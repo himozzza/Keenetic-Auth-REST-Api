@@ -1,4 +1,4 @@
-# Авторизация к роутеру keenetic на Golang.
+# Авторизация REST к роутеру keenetic на Golang.
 
 Возможно указать как POST так и GET.
 
