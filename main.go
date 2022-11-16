@@ -58,7 +58,7 @@ func auth(url string) (bool, string) {
 }
 
 func posting(query string, post string, cookieSet string) *http.Request {
-	url := "https://" + user.ip_addr + "/" + query
+	url := "http://" + user.ip_addr + "/" + query
 
 	if post != "nil" {
 		request, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(post)))
