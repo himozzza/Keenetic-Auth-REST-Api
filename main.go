@@ -91,7 +91,7 @@ func SetHeaders(request *http.Request, cookieSet string) *http.Request {
 }
 
 func main() {
-	url := "https://" + user.ip_addr + "/"
+	url := "http://" + user.ip_addr + "/"
 	accept, cookieSet := auth(url)
 	if accept && cookieSet != "nil" {
 		post := `nil`                                                    // Указывает Json в виде строки для POST. `nil` - Если нужен GET.
